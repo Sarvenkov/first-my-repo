@@ -1,0 +1,116 @@
+html, body{
+    margin: 10px 0 0 0;
+    background: url('dark_geometric.png');
+    color: #fff;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.wrapper{
+    max-width: 800px;
+    padding: 0 0;
+    margin: 0 auto;
+    position: relative;
+
+}
+.header {
+    position: relative;
+    width: 100%;
+}
+#selectGender{
+    display: block;
+    position: absolute;
+    width: 46%;
+    padding-left: 4%;
+
+}
+#inputDate{
+    display: block;
+    padding-left: 4%;
+    position: absolute;
+    width: 46%;
+    left: 50%;
+
+
+}
+
+.wrapper .col{
+    background: #7E827A;
+    height: 8px;
+    float: left;
+    content: '';
+    margin: 1px;
+    width: 8px;
+    border-radius: 1px;
+/*    position: absolute;*/
+/*    z-index: 1;*/
+
+
+}
+
+.wrapper .wasted{
+    background: #703030;
+}
+
+.col:hover{
+
+    transform: scale(2);
+    background: #3E403C;
+    transition: all,  0.25s ease;
+    box-shadow: 0 0 1px #222;
+}
+.wasted:hover{
+    transform: scale(2);
+    background: #401B1B;
+    transition: all,  0.25s ease;
+    box-shadow: 0 0 1px #222;
+}
+
+.row:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.row{
+    margin: -1px;
+    position: absolute;
+
+    top: 150px;
+
+
+
+}
+
+#data, #button{
+    padding: 5px;
+    font-size: 15px;
+    text-shadow: 0px 1px 0px #fff;
+    outline: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#bcbcbe), to(#ffffff));
+    background: -moz-linear-gradient(top, #bcbcbe, #ffffff);
+    background: linear-gradient(top, #bcbcbe, #ffffff);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #717171;
+    font-family: monospace;
+
+
+}
+#button{
+    width: 120px;
+    height: 35px;
+}
+#button, .gender {
+    cursor: pointer;
+}
+#data {
+    cursor: text;
+}
+
+
+#button:hover {
+    -webkit-box-shadow: 0px 0px 5px #C77966;
+    -moz-box-shadow: 0px 0px 5px #C77966;
+    box-shadow: 0px 0px 5px #C77966;
+}
